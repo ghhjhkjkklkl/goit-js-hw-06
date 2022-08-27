@@ -3,11 +3,15 @@ function getRandomHexColor() {
 }
 
 
-const button = document.querySelector(".change-color");
-const changeColor = document.querySelector(".color");
 
-button.addEventListener("click", () => {
-  body.style.backgroundColor = getRandomHexColor()
+
+const button = document.querySelector('.change-color');
+const changeColor = document.querySelector('.color');
+
+button.addEventListener('click', () => {
+  document.body.style.backgroundColor = getRandomHexColor();
+changeColor.textContent = getRandomHexColor();
+
 });
 
 
@@ -17,24 +21,3 @@ button.addEventListener("click", () => {
 
 
 
-
-
-
-//  button.addEventListener("click", () => {
-//   changeColor.style.backgroundColor = function getRandomHexColor()
-//  }
-//  );
-
-// const button = document.querySelector(".my-button");
-
-// const handleClick = () => {
-//   console.log("Button was clicked");
-// };
-
-// button.addEventListener("click", handleClick);
-
-// const button = document.querySelector(".my-button");
-
-// button.addEventListener("click", () => {
-//   console.log("Button was clicked");
-// });
